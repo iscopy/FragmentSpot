@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FragmentSpot</string>
+
+    <!--导航栏-->
+    <string name="home">首页</string>
+    <string name="sleep">睡眠分析</string>
+    <string name="statistics">统计</string>
+    <string name="find">发现</string>
+    <string name="myself">我的</string>
+</resources>

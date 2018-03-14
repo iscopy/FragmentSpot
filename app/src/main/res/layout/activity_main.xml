@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.win.fragmentspot.MainActivity">
+
+    <!--内容显示界面-->
+    <FrameLayout
+        android:layout_weight="1"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <!--导航栏-->
+    <RadioGroup
+        android:id="@+id/menu"
+        android:background="#053175"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/home_rb"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:textColor="@drawable/index_activity_backcolor"
+            android:text="@string/home"
+            android:drawableTop="@drawable/index_activity_home"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/sleep_rb"
+            android:layout_width="0dp"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:textColor="@drawable/index_activity_backcolor"
+            android:drawableTop="@drawable/index_activity_sleep"
+            android:gravity="center"
+            android:text="@string/sleep" />
+
+        <RadioButton
+            android:id="@+id/Statistics_rb"
+            android:layout_width="0dp"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:textColor="@drawable/index_activity_backcolor"
+            android:drawableTop="@drawable/index_activity_statistics"
+            android:gravity="center"
+            android:text="@string/statistics" />
+
+        <RadioButton
+            android:id="@+id/find_rb"
+            android:layout_width="0dp"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:textColor="@drawable/index_activity_backcolor"
+            android:drawableTop="@drawable/index_activity_find"
+            android:gravity="center"
+            android:text="@string/find" />
+        <RadioButton
+            android:id="@+id/myself_rb"
+            android:layout_width="0dp"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:textColor="@drawable/index_activity_backcolor"
+            android:drawableTop="@drawable/index_activity_myself"
+            android:gravity="center"
+            android:text="@string/myself" />
+    </RadioGroup>
+
+</LinearLayout>
